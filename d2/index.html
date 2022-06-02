@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JP</title>
+    <meta name="description" content="A page of Jinyu Pei" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="bg-black text-white text-center p-5">
+      <div class="container">
+        <h1>Hello! I'm Jinyu Pei</h1>
+      </div>
+    </div>
+    <div class="text-center p-3">
+      <div class="container">
+        <figure>
+          <img
+            src="profile.jpg"
+            alt="My profile picture: some random chars"
+            height="300"
+            width="300"
+          />
+          <figcaption>my usual profile picture</figcaption>
+        </figure>
+        <h3>my GitHub: unknown_cstdio</h3>
+      </div>
+    </div>
+    <div class="text-center p-3 text-white bg-black">
+      <p>
+        My name is Jinyu Pei and currently a rising Junior majoring in
+        Mathematics and Computer Science in Rice University.
+      </p>
+      <p>
+        I like to play video games (currently playing Elden Ring and Risk of
+        Rain 2), and have a pet snake(ball python).
+      </p>
+      <p>Belows are some buttons to play with :)</p>
+    </div>
+    <div class="text-center">
+      <div class="container">
+        number to calculate:
+        <input
+          type="text"
+          name="text field"
+          placeholder="number"
+          id="text"
+          value="0"
+        />
+        <div class="form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="radio"
+            id="radio"
+          />
+          <label class="form-check-label" for="radio"> do nothing </label>
+        </div>
+        <div class="form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="check">
+            <label class="form-check-label" for="check">
+                checked- unchecked+
+            </label>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="caculate()">
+            calculate
+          </button>
+          <h4 id="result">0</h4>
+      </div>
+    <script src="main.js"></script>
+  </body>
+</html>
