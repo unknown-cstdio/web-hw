@@ -31,11 +31,11 @@ function App() {
 
   async function onRecipeCreate(name, content) {
   // create the task
-  const recipe = new Recipe(Math.random(), name, content)
-  /*
+  //const recipe = new Recipe(Math.random(), name, content)
+  
   const recipe = await RecipeService.createRecipe(
     new Recipe(null, name, content)
-  );*/
+  );
 
   // add the task to the tasks state
   setRecipes([...recipes, recipe]);
@@ -43,7 +43,7 @@ function App() {
  }
 
  async function onRecipeRemove(recipeId) {
-  //await RecipeService.deleteRecipe(recipeId);
+  await RecipeService.deleteRecipe(recipeId);
 
   // update the tasks state with the filtered tasks
   setRecipes(recipes.filter((recipe) => recipe.id !== recipeId));
